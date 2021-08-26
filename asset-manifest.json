@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.b3eeec96.chunk.css",
-    "main.js": "/portfolio/static/js/main.ba1f1e3f.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.ba1f1e3f.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.4878b4d5.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.4878b4d5.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.71b7b24f.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.71b7b24f.js.map",
     "static/js/2.defc7b92.chunk.js": "/portfolio/static/js/2.defc7b92.chunk.js",
@@ -15,6 +15,7 @@
     "static/media/index.css": "/portfolio/static/media/Recoleta.b95932ac.woff2",
     "static/media/github.f11016fc.svg": "/portfolio/static/media/github.f11016fc.svg",
     "static/media/head@2x.3bc2cd47.png": "/portfolio/static/media/head@2x.3bc2cd47.png",
+    "static/media/lerevegourmand.9b917f95.png": "/portfolio/static/media/lerevegourmand.9b917f95.png",
     "static/media/linkedin.cd3dcc24.svg": "/portfolio/static/media/linkedin.cd3dcc24.svg",
     "static/media/logo_home.19eb1f2f.png": "/portfolio/static/media/logo_home.19eb1f2f.png",
     "static/media/logo_home@2x.07f43e77.png": "/portfolio/static/media/logo_home@2x.07f43e77.png",
@@ -29,6 +30,6 @@
     "static/js/runtime-main.71b7b24f.js",
     "static/js/2.defc7b92.chunk.js",
     "static/css/main.b3eeec96.chunk.css",
-    "static/js/main.ba1f1e3f.chunk.js"
+    "static/js/main.4878b4d5.chunk.js"
   ]
 }
