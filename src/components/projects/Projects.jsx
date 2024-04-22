@@ -1,14 +1,15 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
-import ProjectCard from "./ProjectCard";
-import { projectArray } from "../../constants";
-import Title from "../common/Title";
-import Section from "../common/Section";
+import { projectArray } from '../../constants'
+import { Section } from '../common/Section'
+import { Title } from '../common/Title'
+
+import ProjectCard from './ProjectCard'
 
 const Wrapper = styled(Section)`
   height: auto;
-`;
+`
 
 const Cards = styled.div`
   color: #ffffff;
@@ -19,19 +20,17 @@ const Cards = styled.div`
   > a {
     margin: 0 40px;
   }
-`;
+`
 
-const Projects = () => {
+export const Projects = () => {
   return (
     <Wrapper>
       <Title>Projets</Title>
       <Cards>
         {projectArray.map((project, index) => (
-          <ProjectCard key={`project_${index}`} project={project} />
+          <ProjectCard key={`project_${index + project.name}`} project={project} />
         ))}
       </Cards>
     </Wrapper>
-  );
-};
-
-export default Projects;
+  )
+}

@@ -1,7 +1,8 @@
-import styled from "styled-components";
-import { devices } from "../../constants";
+import styled from 'styled-components'
 
-const Section = styled.section`
+import { devices } from '../../constants'
+
+export const Section = styled.section`
   height: auto;
   padding: 20px;
 
@@ -9,6 +10,4 @@ const Section = styled.section`
     height: 100vh;
     padding: 0 40px;
   }
-`;
-
-export default Section;
+`

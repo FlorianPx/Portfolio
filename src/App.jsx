@@ -1,14 +1,14 @@
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Skills from "./components/skills/Skills";
+import './App.css'
+import { Header } from 'components/Header'
+import { Main } from 'components/Main'
+import { Skills } from 'components/skills/Skills'
+import { Projects } from 'components/projects/Projects'
+import { Contact } from 'components/contact/Contact'
+import { Notification } from 'components/Notification'
 
-import "./App.css";
-import GlobalStyle from "./GlobalStyle";
-import Notification from "./components/Notification";
-import Projects from "./components/projects/Projects";
-import Contact from "./components/contact/Contact";
+import GlobalStyle from './GlobalStyle'
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <GlobalStyle />
@@ -19,7 +19,7 @@ function App() {
       <Contact />
       <Notification />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

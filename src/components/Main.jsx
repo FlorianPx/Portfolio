@@ -1,11 +1,11 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
-import { devices } from "../constants";
+import { devices } from '../constants'
+import LogoHome from '../assets/logos/logo_home.png'
+import LogoHome2 from '../assets/logos/logo_home@2x.png'
 
-import LogoHome from "../assets/logos/logo_home.png";
-import LogoHome2 from "../assets/logos/logo_home@2x.png";
-import Section from "./common/Section";
+import { Section } from './common/Section'
 
 const Wrapper = styled(Section)`
   display: flex;
@@ -18,12 +18,12 @@ const Wrapper = styled(Section)`
     align-items: center;
     justify-content: center;
   }
-`;
+`
 
 const BlockText = styled.div`
   margin-right: 3vw;
   max-width: 740px;
-`;
+`
 
 const HeadTitle = styled.h2`
   font-size: 18px;
@@ -32,7 +32,7 @@ const HeadTitle = styled.h2`
   display: flex;
   align-items: center;
   text-transform: uppercase;
-`;
+`
 
 const Dash = styled.span`
   width: 78px;
@@ -40,12 +40,12 @@ const Dash = styled.span`
   margin-right: 8px;
   text-transform: uppercase;
   background-color: #9d67f8;
-`;
+`
 
 const Title = styled.h1`
   font-size: 40px;
   font-weight: normal;
-  font-family: "Recoleta", serif;
+  font-family: 'Recoleta', serif;
   line-height: 50px;
   color: #ffffff;
   margin: 0;
@@ -54,15 +54,15 @@ const Title = styled.h1`
     font-size: 50px;
     line-height: 70px;
   }
-`;
+`
 
 const Paragraph = styled.p`
   font-size: 18px;
   color: #d7cbff;
   margin: 18px 0 0;
-`;
+`
 
-const Main = () => {
+export const Main = () => {
   return (
     <Wrapper id="main">
       <BlockText>
@@ -70,28 +70,19 @@ const Main = () => {
           <Dash />
           Florian Poux
         </HeadTitle>
-        <Title>
-          Hey ! Je m'appelle Florian, et je suis développeur front-end.
-        </Title>
+        <Title>Hey ! Je m'appelle Florian, et je suis développeur front-end.</Title>
         <Paragraph>
           {/* Après avoir reçu la certification de développeur React/Node.js à la
           Wild Code School de Bordeaux et réalisé un stage dans l'entreprise
           TimeOne Performance de Pessac; */}
-          Bienvenue sur ma page ! Vous y trouverez mes skills, quelques projets
-          réalisés seul ou en équipe.
+          Bienvenue sur ma page ! Vous y trouverez mes skills, quelques projets réalisés seul ou en
+          équipe.
           {/* ainsi que mon CV si vous souhaitez en savoir plus sur moi. */}
           <br />
-          Bonne visite !
-          {/* je suis actuellement en CDI dans l'agence web Eenov. */}
+          Bonne visite !{/* je suis actuellement en CDI dans l'agence web Eenov. */}
         </Paragraph>
       </BlockText>
-      <img
-        src={LogoHome}
-        srcSet={`${LogoHome} 1x, ${LogoHome2} 2x`}
-        alt="Logo de Florian Poux"
-      />
+      <img alt="Logo de Florian Poux" src={LogoHome} srcSet={`${LogoHome} 1x, ${LogoHome2} 2x`} />
     </Wrapper>
-  );
-};
-
-export default Main;
+  )
+}

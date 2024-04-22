@@ -1,16 +1,17 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
+import { Section } from 'components/common/Section'
+import { Title } from 'components/common/Title'
 
-import CardContact from "./CardContact";
-import { contactArray, devices } from "../../constants";
-import Title from "../common/Title";
-import Section from "../common/Section";
+import { contactArray, devices } from '../../constants'
+
+import { CardContact } from './CardContact'
 
 const Wrapper = styled(Section)`
   display: flex;
   flex-direction: column;
   justify-content: center;
-`;
+`
 
 const Cards = styled.div`
   display: flex;
@@ -31,19 +32,16 @@ const Cards = styled.div`
       margin-top: 0;
     }
   }
-`;
-
-const Contact = () => {
+`
+export const Contact = () => {
   return (
     <Wrapper id="contact">
       <Title>Entrons en contact</Title>
       <Cards>
         {contactArray.map((contact, index) => (
-          <CardContact key={`contact_${index}`} contact={contact} />
+          <CardContact contact={contact} key={`contact_${index + contact.type}`} />
         ))}
       </Cards>
     </Wrapper>
-  );
-};
-
-export default Contact;
+  )
+}

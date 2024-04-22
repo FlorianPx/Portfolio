@@ -1,10 +1,11 @@
-import React from "react";
-import Card from "./Card";
+import React from 'react'
+import styled from 'styled-components'
 
-import styled from "styled-components";
-import { cardArray, devices } from "../../constants";
-import Title from "../common/Title";
-import Section from "../common/Section";
+import { cardArray, devices } from '../../constants'
+import { Section } from '../common/Section'
+import { Title } from '../common/Title'
+
+import Card from './Card'
 
 const Cards = styled.div`
   color: #ffffff;
@@ -25,19 +26,17 @@ const Cards = styled.div`
       margin-top: 0;
     }
   }
-`;
+`
 
-const Skills = () => {
+export const Skills = () => {
   return (
     <Section>
       <Title>Compétences</Title>
       <Cards>
         {cardArray.map((card, index) => (
-          <Card key={`skill_${index}`} card={card} />
+          <Card card={card} key={`skill_${index + card.title}`} />
         ))}
       </Cards>
     </Section>
-  );
-};
-
-export default Skills;
+  )
+}
