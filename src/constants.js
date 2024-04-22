@@ -5,7 +5,6 @@ import nodeIcon2x from './assets/logos/nodeIcon2x.png'
 import email from './assets/logos/mail.svg'
 import github from './assets/logos/github.svg'
 import linkedin from './assets/logos/linkedin.svg'
-
 import lerevegourmand from './assets/images/lerevegourmand.png'
 import studioPhoto from './assets/images/studioPhoto.png'
 import motpourmot from './assets/images/motpourmot.png'
@@ -27,7 +26,7 @@ export const cardArray = [
     skills: [
       'Création de functional components',
       'Utilisation des hooks: useState, useEffect, useMemo, useContext',
-      'Frameworks: React JS, jQuery, Twig, Express.js',
+      'Frameworks: React JS, jQuery, Twig',
       'Librairies: Redux, React Router, React Query, Axios, Mobiscroll, Nivo, Chart.js, Mapbox GL JS, Styled-components, Tailwind CSS',
     ],
   },
