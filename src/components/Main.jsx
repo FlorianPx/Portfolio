@@ -79,7 +79,7 @@ export const Main = () => {
           équipe.
           {/* ainsi que mon CV si vous souhaitez en savoir plus sur moi. */}
           <br />
-          Bonne visite !{/* je suis actuellement en CDI dans l'agence web Eenov. */}
+          Bonne visite !
         </Paragraph>
       </BlockText>
       <img alt="Logo de Florian Poux" src={LogoHome} srcSet={`${LogoHome} 1x, ${LogoHome2} 2x`} />
