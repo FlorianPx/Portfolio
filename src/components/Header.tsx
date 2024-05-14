@@ -17,6 +17,7 @@ const Nav = styled.div<ShowNav>`
   width: 100%;
   height: 64px;
   background: #232233;
+  transition: all 0.3s ease-out;
 `
 const Link = styled.a`
   position: absolute;
