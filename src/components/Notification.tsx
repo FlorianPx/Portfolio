@@ -88,7 +88,7 @@ export const Notification = () => {
   }
 
   if (isClicked) {
-    setTimeout(() => setIsClicked(false), 4000)
+    setTimeout(() => setIsClicked(false), 5000)
   }
 
   const handleChange = () => {
@@ -116,7 +116,7 @@ export const Notification = () => {
       <Content $isClicked={isClicked} onMouseEnter={handleChange}>
         <HasBeenReadBullet $hasBeenClickBullet={hasBeenClickBullet} />
         <Paragraph $isClicked={isClicked} onClick={handleChange}>
-          Si mon profil vous suscite un intérêt, n'hésitez pas.{' '}
+          Si mon profil suscite un intérêt, n'hésitez pas,{' '}
           <Link href="#contact">Contactez-moi !</Link>
           <span> 😁</span>
         </Paragraph>
